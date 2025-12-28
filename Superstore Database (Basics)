@@ -1,0 +1,18 @@
+-- Prompt 1 Sort all Superstore items by price, highest to lowest.
+SELECT *
+FROM superstore
+ORDER BY price desc;
+
+-- Prompt 2 Get a full count of each item in the Superstore database.
+SELECT COUNT(item_name)
+FROM superstore;
+
+-- Prompt 3 Get all information for items in the Kitchen Supplies category.
+SELECT *
+FROM superstore
+WHERE category = "Kitchen Supplies";
+
+-- Prompt 4 How many Smart LED TVs are in stock?
+SELECT stock_quantity, item_name
+FROM superstore
+WHERE item_name = "Smart LED TV";
